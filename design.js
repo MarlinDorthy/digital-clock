@@ -37,8 +37,8 @@ function updateClock() {
   dateElement.textContent = `${dayOfWeek}, ${month} ${day}, ${year}`;
 }
 
+// Initialize the clock immediately
+updateClock();
+
 // Update the clock every second
 setInterval(updateClock, 1000);
-
-// Initialize the clock when the page loads
-updateClock();
